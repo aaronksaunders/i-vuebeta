@@ -5,11 +5,11 @@
         <ion-buttons slot="start">
           <ion-menu-button />
         </ion-buttons>
-        <ion-title>Tab 1</ion-title>
+        <ion-title>Profile Page</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <ExploreContainer name="Tab 1 page" />
+      <h2>PROFILE PAGE</h2>
     </ion-content>
   </ion-page>
 </template>
@@ -24,12 +24,10 @@ import {
   IonMenuButton,
   IonButtons
 } from "@ionic/vue";
-import ExploreContainer from "@/components/ExploreContainer.vue";
 
 export default {
-  name: "Tab1",
+  name: "Profile",
   components: {
-    ExploreContainer,
     IonHeader,
     IonToolbar,
     IonTitle,

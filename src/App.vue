@@ -1,18 +1,24 @@
 <template>
   <ion-app>
-    <ion-router-outlet />
+    <IonSplitPane content-id="main-content">
+      <main-menu />
+      <ion-router-outlet id="main-content"></ion-router-outlet>
+    </IonSplitPane>
   </ion-app>
 </template>
 
 <script lang="ts">
-import { IonApp, IonRouterOutlet } from '@ionic/vue';
-import { defineComponent } from 'vue';
+import { IonApp, IonRouterOutlet, IonSplitPane } from "@ionic/vue";
+import { defineComponent } from "vue";
+import MainMenu from "./components/MainMenu.vue"
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
   components: {
     IonApp,
-    IonRouterOutlet
-  }
+    IonRouterOutlet,
+    IonSplitPane,
+    MainMenu
+  },
 });
 </script>
